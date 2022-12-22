@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        h3 {text-align: center; margin: 10px;}
+    </style>
+</head>
+
+<body>
+    <h3>pyscript Example 01</h3>
+
+    <div id="plot"></div>
+     <py-env>
+         - numpy
+         - matplotlib
+     </py-env>
+
+    <py-script output="plot">
+        from datetime import datetime
+        import matplotlib.pyplot as plt
+        import numpy as np
+
+        print("Hello World")
+        print(f"현재 시간 : {datetime.now()}")
+
+        x = np.random.randn(1000)
+        y = np.random.randn(1000)
+
+        fig, ax = plt.subplots()
+        ax.scatter(x, y)
+        fig
+    </py-script>
+
+<inv>
+    <canvas id="myChart"></canvas>
+</inv>
+
+<script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+</body>
+
+</html>
+
+
