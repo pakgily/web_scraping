@@ -25,8 +25,3 @@ while True:
     prices.append(dt.datetime.now().strftime("%H, %M, %S"))
     print(prices)
 
-
-"tst"
-"tst"
-"tst"
-"tst"
