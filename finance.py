@@ -26,7 +26,5 @@ while True:
     print(prices)
 
 
-a
-
-
+"git test 중"
 
