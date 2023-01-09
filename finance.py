@@ -26,5 +26,5 @@ while True:
     print(prices)
 
 
-"git test 중"
+"git test 중2"
 
