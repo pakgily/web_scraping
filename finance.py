@@ -3,7 +3,7 @@ import time
 import datetime as dt
 from bs4 import BeautifulSoup
 
-codes = ['035420', '377300','009830','187660'] # 종목코드 리스트
+codes = ['035420', '377300','009830','187660','068270'] # 종목코드 리스트
 prices = [] # 가격정보가 담길 리스트
 
 while True:
@@ -26,9 +26,7 @@ while True:
     print(prices)
 
 
-
-
-
+a
 
 
 
