@@ -24,3 +24,5 @@ while True:
         prices.append(price.get_text())
     prices.append(dt.datetime.now().strftime("%H, %M, %S"))
     print(prices)
+
+
