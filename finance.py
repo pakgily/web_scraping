@@ -26,7 +26,6 @@ while True:
     print(prices)
 
 
-a
-
-
-
+"tst"
+"tst"
+"tst"
