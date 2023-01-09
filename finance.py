@@ -26,3 +26,4 @@ while True:
     print(prices)
 
 "test"
+"test"
