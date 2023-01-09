@@ -25,4 +25,4 @@ while True:
     prices.append(dt.datetime.now().strftime("%H, %M, %S"))
     print(prices)
 
-
+"test"
