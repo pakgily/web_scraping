@@ -28,7 +28,7 @@ print(data['date'])
 #     print(day['date'], day['tradePrice'])
 
 
-writer = pd.ExcelWriter('C:/Users/Administrator/Desktop/221220.xlsx', engine='xlsxwriter')
+writer = pd.ExcelWriter('C:/Users/Park HanGil/Desktop/221220.xlsx', engine='xlsxwriter')
 data.to_excel(writer,sheet_name='A')
 writer.close()
 
