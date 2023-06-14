@@ -9,7 +9,7 @@ prices = [] # 가격정보가 담길 리스트
 while True:
     prices = []
     for code in codes:
-        time.sleep(10)
+        time.sleep(1)
         url = 'https://finance.naver.com/item/main.nhn?code=' + code
 
         response = requests.get(url)
@@ -24,4 +24,6 @@ while True:
         prices.append(price.get_text())
     prices.append(dt.datetime.now().strftime("%H, %M, %S"))
     print(prices)
+    soup.find()
+
 
