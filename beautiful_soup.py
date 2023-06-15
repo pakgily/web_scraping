@@ -14,4 +14,5 @@ if response.status_code == 200:
 else :
     print(response.status_code)
 
+
     # footer > div > div.aside_area > div.partner_box_wrap > div:nth-child(1) > a:nth-child(3)
